@@ -6,17 +6,15 @@ def isUnique(string):
     length = len(string)
     
     for i in range(length):
-        print("i", i)
         while j in range(length):
             if j <= i:
                 j = i + 1               
-            if string[i] == string[j]:
+            elif string[i] == string[j]:
                 return False
-            if i == length - 2 and j == length - 1:
+            elif i == length - 2 and j == length - 1:
                 return True
             else:
                 j = j + 1
-                print("j", j)
         j = 0
 
 def problemSet():
