@@ -1,0 +1,11 @@
+Q1_1Naive: Brute force check.
+
+Q1_1Hash: Dictionary maps indices to the characters(keys). Thus, if the string does not contain all unique characters 
+	then the length of the keys will be less than the length of the string.
+
+Q1_2: Sort the strings and then perform a string comparison
+
+Q1_3: Checks if the current index is a space. If it is, then it sets it to %20 and appends to our return string.
+
+Q1_4: Similar to Q1_1Hash. Map indices to keys and then take the length of the indices at each key. If the key has an odd
+	number of values we add 1 to the counter and if this counter is not 0 or 1 then it can not be a palindrome.
