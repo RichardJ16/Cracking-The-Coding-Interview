@@ -1,8 +1,18 @@
 # Replace all spaces in a string with %20
-def replaceSpace(string):
-   
-    temp = string.replace(" ", "%20")
-    return temp
+def replaceSpace(a, b, string):
+
+    retString = ""
+    
+    for i in string:
+        if i == a:
+            i = b
+        retString += i
+    
+    return retString
+            
+        
+    #temp = string.replace(" ", "%20")
+    #return temp
                       
 def problemSet():
 
@@ -19,7 +29,7 @@ def problemSet():
     
     
 def runProblemSet(s1):
-    print("Replace: ", s1 , "\n" ,replaceSpace(s1))
+    print("Replace: ", s1 , "\n" ,replaceSpace(" ", "%20", s1))
     
 problemSet()
         
