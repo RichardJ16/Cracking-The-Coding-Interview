@@ -30,6 +30,7 @@ def checkEdits(s1, s2):
                     s2Curr = s2Curr + 1
                     
                 else:
+                    wrongLetter = wrongLetter + 1
                     s1Curr = s1Curr + 1
                     s2Curr = s2Curr + 2
                     
