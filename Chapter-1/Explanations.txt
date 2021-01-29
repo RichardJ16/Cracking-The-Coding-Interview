@@ -9,3 +9,8 @@ Q1_3: Checks if the current index is a space. If it is, then it sets it to %20 a
 
 Q1_4: Similar to Q1_1Hash. Map indices to keys and then take the length of the indices at each key. If the key has an odd
 	number of values we add 1 to the counter and if this counter is not 0 or 1 then it can not be a palindrome.
+
+Q1_5: Not a very elegant solution. Immediately return false if the difference between lengths are greater than one since that would
+	result in a removal of at least 2. Otherwise compare all chars, and add one if there is a mismatched char unless
+	the difference in length is 1, then we make sure we know which string is smaller then add 2 to the iterator of the bigger
+	string to realign the iterators
