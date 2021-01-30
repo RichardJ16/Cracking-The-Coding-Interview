@@ -25,3 +25,7 @@ Q1_6: Uses a counter to count repeated strings while iterating. When we reach th
 Q1_7: Transpose the Matrix. Using comma operator to pass on the temp variable you swap all indices [i][j] and [j][i]. To clean this
 	up a bit you can put transpose as a function and just call it with the matrix as a param and return the transposed matrix.
 	Once it has been transposed you just need to reverse. Temp is an offset iterator. I got lazy with the test problems.
+
+Q1_8: This algorithm is a bit on the greedier side. It adds the i and j of a found 0 to two arrays and then for every element in that
+	array we assign the column and row of the matrix to 0. The problem with this implementation is that a worst case of all 0's
+	would result in the matrix reassigning each row and column to 0 anyway.
