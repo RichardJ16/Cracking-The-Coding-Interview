@@ -17,12 +17,13 @@ def rotateMatrix(m1):
             
             m1[k][l], m1[k][temp] = m1[k][temp], m1[k][l]
              
-    print(m1)
+    return m1
     
     
     
 m1 = [[1,2,3],[4,5,6],[7,8,9]]
-rotateMatrix(m1)
+print("Matrix", m1)
+print("Rotated", rotateMatrix(m1))
 # [1 2 3]
 # [4 5 6]
 # [7 8 9]
