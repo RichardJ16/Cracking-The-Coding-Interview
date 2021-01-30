@@ -29,3 +29,7 @@ Q1_7: Transpose the Matrix. Using comma operator to pass on the temp variable yo
 Q1_8: This algorithm is a bit on the greedier side. It adds the i and j of a found 0 to two arrays and then for every element in that
 	array we assign the column and row of the matrix to 0. The problem with this implementation is that a worst case of all 0's
 	would result in the matrix reassigning each row and column to 0 anyway.
+
+Q1_9: A rotation revolved around a specific point. So if we add the string to itself, we would be left with the rotated word in the 
+	string somewhere. We get one use of isSubstring(), so if we concatenate s1 with itself and check whether it contains the 
+	substring we will get a truth value for isRotation()
