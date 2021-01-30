@@ -7,14 +7,14 @@ def rotateMatrix(m1):
     
     for i in range(len(m1)):
     
-        for j in range(i, len(m1)):
-        
+        for j in range(len(m1[0])):
             if m1[i][j] == 0:
                 arrayI.append(i)
                 arrayJ.append(j)
             
     for x in arrayI:
         for q,r in enumerate(m1):
+            q = q - 1
             m1[x][q] = 0
             
     for y in arrayJ:
@@ -25,6 +25,7 @@ def rotateMatrix(m1):
     
     
     
+
 m1 = [[1,0,1],[1,1,1],[1,1,0]]
 print("Matrix", m1)
 print("Zeros", rotateMatrix(m1))
@@ -33,7 +34,7 @@ m1 = [[0,0,0],[0,0,0],[0,0,0]]
 print("Matrix", m1)
 print("Zeros", rotateMatrix(m1))
 
-m1 = [[1,1,1],[1,1,1],[1,1,1]]
+m1 = [[1,1],[1,1],[0,1]]
 print("Matrix", m1)
 print("Zeros", rotateMatrix(m1))
 
