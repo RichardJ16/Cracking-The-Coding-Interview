@@ -21,3 +21,7 @@ Q1_6: Uses a counter to count repeated strings while iterating. When we reach th
 
 	Note: There is defintely a way to return the original before calculations, so I might come back and try and figure out 
 		the rule later on.
+
+Q1_7: Transpose the Matrix. Using comma operator to pass on the temp variable you swap all indices [i][j] and [j][i]. To clean this
+	up a bit you can put transpose as a function and just call it with the matrix as a param and return the transposed matrix.
+	Once it has been transposed you just need to reverse. Temp is an offset iterator.
