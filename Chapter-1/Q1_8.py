@@ -1,4 +1,4 @@
-# Write and algorithm that finds a zero in an NxN matrix and writes the column and row as 0's as well
+# Write an algorithm that finds a zero in an NxN matrix and writes the column and row as 0's as well
 
 def rotateMatrix(m1):
 
