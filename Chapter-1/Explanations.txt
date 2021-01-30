@@ -14,3 +14,10 @@ Q1_5: Not a very elegant solution. Immediately return false if the difference be
 	result in a removal of at least 2. Otherwise compare all chars, and add one if there is a mismatched char unless
 	the difference in length is 1, then we make sure we know which string is smaller then add 2 to the iterator of the bigger
 	string to realign the iterators
+
+Q1_6: Uses a counter to count repeated strings while iterating. When we reach the end of duplicate characters we append the chat along
+	with the count and then reset the count and continue. At end of string we check whether it is a duplicate or not and then we
+	return our helper function checkRetString to determine whether we should return the original or the compressed version.
+
+	Note: There is defintely a way to return the original before calculations, so I might come back and try and figure out 
+		the rule later on.
