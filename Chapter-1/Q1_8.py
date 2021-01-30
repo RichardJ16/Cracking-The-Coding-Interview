@@ -23,9 +23,6 @@ def rotateMatrix(m1):
             
     return m1
     
-    
-    
-
 m1 = [[1,0,1],[1,1,1],[1,1,0]]
 print("Matrix", m1)
 print("Zeros", rotateMatrix(m1))
