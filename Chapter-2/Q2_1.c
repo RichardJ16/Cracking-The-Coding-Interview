@@ -17,7 +17,7 @@ struct GENERIC
       typLong,          // 5
       typFloat,
       typDouble,
-    } iType;
+    } gType;
 
     union
     {
@@ -28,15 +28,6 @@ struct GENERIC
 		
     } value;
 };
-
-typedef struct {
-    generic type;
-    union {
-        int a; 
-        float b; 
-        char c;
-    } my_union;
-} my_struct;
 
 void problemSet() {
 	
