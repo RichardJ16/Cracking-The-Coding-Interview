@@ -27,7 +27,7 @@ LinkedList removeDupe(LinkedList list) {
 				
 				addToEnd(retList, str);
 				
-			}
+		}
 	}
 	
 	free(iterator);
