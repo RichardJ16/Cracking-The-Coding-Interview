@@ -6,53 +6,68 @@
 Remove Duplicates from an unsorted linked list
 */
 
-struct GENERIC
-{
-    enum {
-      typUndefined,
-      typInt,           // 1
-      typUint,
-      typString,
-      typByteString,
-      typLong,          // 5
-      typFloat,
-      typDouble,
-    } gType;
-
-    union
-    {
-        int i;
-        unsigned int u;
-        char* s;
-        long l;
+LinkedList removeDupe(LinkedList list) {
+	
+	LinkedList retList = new_LinkedList();
+	
+	if (isEmpty(list)) {
+		return list;
+	}
+	
+	else {
 		
-    } value;
-};
+		LinkedListIterator iterator = LL_iterator(list);
+		
+		while (hasNext(iterator)) {
+
+			void *data = next(iterator);
+			char *str = (char*) data;
+						
+			if (!contains(retList, str)) {
+				
+				addToEnd(retList, str);
+				
+			}
+	}
+	
+	free(iterator);
+
+	}
+	printf("List with no duplicates = ");
+	toString(retList);
+	return retList;
+}
 
 void problemSet() {
 	
 	LinkedList list = new_LinkedList();
-	printf("new list =");
-	toString(list);
-	
+		
 	// Test 1
 	
 	addToEnd(list, "a");
 	addToEnd(list, "b");
 	addToEnd(list, "a");
 	
-	printf("new list =");
+	printf("New list = ");
 	toString(list);
-	
-	removeDupe(list)
-}
-LinkedList removeDupe(LinkedList list) {
-	
-	
-	
-	return list;
-}
+		
+	LinkedList removeDupe(LinkedList list);
+	removeDupe(list);
 
+	// Test 2
+	LinkedList list2 = new_LinkedList();
+	addToEnd(list2, "1");
+	addToEnd(list2, "1");
+	addToEnd(list2, "1");
+	
+	printf("New list = ");
+	toString(list2);
+		
+	removeDupe(list2);
+	
+	LL_free(list, false);
+	LL_free(list2, false);
+}
 
 
 int main(int argc, char *argv[]) {
