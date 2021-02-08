@@ -3,5 +3,3 @@ Q2_1: Iterate over the list and add any value that is not already in the return 
 Q2_2: Though there are a couple ways to find the kth to last element in a linked list, this is a more readable approach.
 	Reverse the linked list and count up to the element.
 
-Q2_3: Simple considering I made a remove function for the LL. To perform comparison the input character needs to be of type
-	char *, since that is how the data is stored in the LL. Just iterate through the list and remove the node atElement(input)
