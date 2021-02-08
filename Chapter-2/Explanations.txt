@@ -1,1 +1,4 @@
 Q2_1: Iterate over the list and add any value that is not already in the return list to it, then return the return list.
+
+Q2_2: Though there are a couple ways to find the kth to last element in a linked list, this is a more readable approach.
+	Reverse the linked list and count up to the element.
